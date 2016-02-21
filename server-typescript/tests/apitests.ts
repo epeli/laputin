@@ -23,8 +23,7 @@ describe("Laputin API", () => {
         before(() => {
             return initializeLaputin("adding-files")
                 .then((l) => { laputin = l; })
-                .then(() => { return laputin.library.addFile(file); })
-                .then();
+                .then(() => { return laputin.library.addFile(file); });
         });
         
         it("Added file can be found", () => {
